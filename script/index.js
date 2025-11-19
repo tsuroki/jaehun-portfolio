@@ -47,3 +47,21 @@ const otherSlide = new Swiper ('#other-slide',{
     spaceBetween : 30,
     releaseOnEdges: true,
 })
+
+/* project autoplay 기능 */
+
+const projectSlide = new Swiper(".project-slide", {
+    pagination: {
+        el: ".project-nav",
+        type: "progressbar",
+    },
+    slidesPerView: 1,
+    loop : false,
+    mousewheel: true,
+    direction:'vertical',
+    releaseOnEdges: true,
+    speed : 500,
+    reverseDirection : true,
+    nested: true,
+    draggable: false,
+});
