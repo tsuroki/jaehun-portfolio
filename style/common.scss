@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Moderniz';
+    src:url('../font/Moderniz.otf') format('opentype');
+    font-style:normal;
+}
+/* font-weight */
+$weight-regular : 400;
+$weight-medium : 500;
+$weight-semibold : 600;
+$weight-bold : 700;
+
+/* font-size */
+$size-12px : 0.75rem;
+$size-14px : 0.875rem;
+$size-18px : 1.125rem;
+$size-20px : 1.25rem;
+$size-22px : 1.375rem;
+$size-24px : 1.5rem;
+$size-26px : 1.625rem;
+$size-28px : 1.75rem;
+$size-30px : 1.875rem;
+$size-32px : 2rem;
+$size-34px : 2.125rem;
+$size-36px : 2.25rem;
+$size-38px : 2.375rem;
+$size-40px : 2.5rem;
+$size-42px : 2.625rem;
+$size-44px : 2.75rem;
+$size-46px : 2.875rem;
+$size-48px : 3rem;
+$size-60px : 3.75rem;
+$size-72px : 4.5rem;
+$size-140px : 8.75rem;
+
+/* color */
+$color-purple : #D17EFF;
+$color-black : #222222;
+
+/* img size */
+@mixin profile-img{
+    width: 400px;
+    height: 400px;
+}
+@mixin career-img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+@mixin other-img{
+    width: 500px;
+    height: 500px;
+}
+
+html, body{
+    -ms-overflow-style: none;
+    }
+    
+    ::-webkit-scrollbar {
+    display: none;
+    }
+
+    /*특정 부분 스크롤바 없애기*/
+
+    .box{
+    -ms-overflow-style: none;
+    }
+    .box::-webkit-scrollbar{
+    display:none;
+}
