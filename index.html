@@ -4,91 +4,291 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    
+    <!-- 웹폰트 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <title>포트폴리오 | 유재훈</title>
+    <!-- swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./script/index.js" defer></script>
 </head>
 <body>
-    <ul class="navigation"> <!-- position : fixed; -->
-        <li>MAIN <span class="nav-bullet"></span></li> <!-- i.classList.add('nav-active'); -->
-        <li>WHO AM I <span class="nav-bullet"></span></li>
-        <li>CAREER <span class="nav-bullet"></span></li>
-        <li>PROJECT <span class="nav-bullet"></span></li>
-        <li>OTHERS <span class="nav-bullet"></span></li>
-    </ul>
-    <section id="main-title">
-        <div class="title">
-            <h2>Hello, this is Jae hun’s</h2>
-            <h1>PORTFOLIO</h1>
-            <a href="#"><img src="#" alt="#"></a>
-        </div>
-    </section>
-    <section id="Who">
-        <div class="left-who">
-            <img src="./images/profile/profile_photo.jpg" alt="유재훈 사진 : 양복입고, 정면을 보며 촬영한 증명사진">
-        </div>
-        <span class="hr"></span>
-        <div class="right-who">
-            <h1 class="WhoAmI"></h1>
-            <div>
-                <h2>YU JAE HUN</h2>
-                <div class="who-content">
-                    <div class="age">
-                        <span><em>AGE</em></span>
-                        <span>28</span>
-                    </div>
-                    <div class="birth">
-                        <span><em>BIRTH</em></span>
-                        <span>1998.02.10</span>
-                    </div>
-                    <div class="email">
-                        <span><em>E-MAIL</em></span>
-                        <span>tsuroki0210@gmail.com</span>
-                    </div>
-                    <div class="phone">
-                        <span><em>PHONE</em></span>
-                        <span>010-6863-4316</span>
-                    </div>
-                    <div class="address">
-                        <span><em>ADDRESS</em></span>
-                        <span>경기도 부천시 소사구 심곡로 70</span>
+    <div class="swiper swiper-handle" id="portfolio">
+        <div class="swiper-pagination port-nav"></div>
+        <div class="swiper-wrapper main-contents-list">
+            <div class="swiper-slide con1" id="main-title">
+                <div class="title">
+                    <h2>Hello, this is Jae hun’s</h2>
+                    <h1>PORTFOLIO</h1>
+                    <p>scroll down</p>
+                    <a href="#who"><img src="./images/component/scroll-down-30px.png" alt="다음 페이지로 이동"></a>
+                </div>
+            </div>
+            <div class="swiper-slide con2" id="who">
+                <div class="left-who">
+                    <img src="./images/profile/profile_photo.jpg" alt="유재훈 사진 : 양복입고, 정면을 보며 촬영한 증명사진">
+                </div>
+                <span class="hr"></span>
+                <div class="right-who">
+                    <h1 class="WhoAmI">실무 속에서 자라난, 디자이너 <em>유재훈</em> 입니다.</h1>
+                    <div class="intro">
+                        <div class="who-content">
+                            <h2>YU JAE HUN</h2>
+                            <div class="age">
+                                <span><em>AGE</em></span>
+                                <span>28</span>
+                            </div>
+                            <div class="birth">
+                                <span><em>BIRTH</em></span>
+                                <span>1998.02.10</span>
+                            </div>
+                            <div class="email">
+                                <span><em>E-MAIL</em></span>
+                                <span>tsuroki0210@gmail.com</span>
+                            </div>
+                            <div class="phone">
+                                <span><em>PHONE</em></span>
+                                <span>010-6863-4316</span>
+                            </div>
+                            <div class="address">
+                                <span><em>ADDRESS</em></span>
+                                <span>경기도 부천시 소사구 심곡로 70</span>
+                            </div>
+                        </div>
+                        <div class="skills">
+                            <h2>SKILLS</h2>
+                            <div class="skills-icon">
+                                <img src="./images/icon/Adobe_Photoshop.png" alt="1. photoshop">
+                                <img src="./images/icon/illustrator.png" alt="2. illustrator">
+                                <img src="./images/icon/aftereffect.png" alt="3. after effect">
+                                <img src="./images/icon/Adobe_XD.png" alt="4. adobe XD">
+                                <img src="./images/icon/Figma.png" alt="5. figma">
+                                <img src="./images/icon/Visual_Studio_Code.png" alt="6. visual studio">
+                                <img src="./images/icon/html.png" alt="7. html5">
+                                <img src="./images/icon/css.png" alt="8. css3">
+                                <img src="./images/icon/javascript.png" alt="9. javascript">
+                                <img src="./images/icon/skectchup.png" alt="10. sketchup">
+                                <img src="./images/icon/fusion360.png" alt="11. fusion 360">
+                                <img src="./images/icon/keyshot.png" alt="12. keyshot">
+                            </div>
+                        </div>
+                        <div class="license">
+                            <h2>License</h2>
+                            <ul class="license-list">
+                                <li>
+                                    <p class="list1">2022.12</p>
+                                    <span>컴퓨터그래픽스운용기능사 | 한국산업인력공단</span>
+                                </li>
+                                <li>
+                                    <p class="list2">2021.09</p>
+                                    <span>3D프린팅모델링자격증 1급 | 한국생산성본부</span>
+                                </li>
+                                <li>
+                                    <p class="list3">2020.09</p>
+                                    <span>GTQ 1급 | 한국생산성본부</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="education">
+                            <h2>Education</h2>
+                            <ul class="edu-list">
+                                <li>
+                                    <p class="list1">2017. 03 ~ 2022. 02</p>
+                                    <span>부천대학교 졸업</span>
+                                </li>
+                                <li>
+                                    <p class="list2">2014. 03 ~ 2017. 02</p>
+                                    <span>정명고등학교 졸업</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="skills">
-                    <h2>SKILLS</h2>
-                    <div class="skills-icon">
-                        <img src="./images/icon/Adobe_Photoshop.png" alt="1. photoshop">
-                        <img src="./images/icon/illustrator.png" alt="2. illustrator">
-                        <img src="./images/icon/aftereffect.png" alt="3. after effect">
-                        <img src="./images/icon/Adobe_XD.png" alt="4. adobe XD">
-                        <img src="./images/icon/Figma.png" alt="5. figma">
-                        <img src="./images/icon/Visual_Studio_Code.png" alt="6. visual studio">
-                        <img src="./images/icon/html.png" alt="7. html5">
-                        <img src="./images/icon/css.png" alt="8. css3">
-                        <img src="./images/icon/javascript.png" alt="9. javascript">
-                        <img src="./images/icon/skectchup.png" alt="10. sketchup">
-                        <img src="./images/icon/fusion360.png" alt="11. fusion 360">
-                        <img src="./images/icon/keyshot.png" alt="12. keyshot">
+            </div>
+            <div class="swiper-slide con3" id="career">
+                <div class="left-career">
+                    <h1 class="career-title">MY <em>CAREER</em></h1>
+                </div>
+                <span class="hr"></span>
+                <div class="right-career">
+                    <div class="bluewave career-list">
+                        <img src="./images/contents-image/bluewave-career.jpg" alt="#">
+                        <div class="career-contents">
+                            <h2 class="career-company">
+                                BLUE WAVE
+                            </h2>
+                            <div class="date">
+                                <h3>Product Designer</h3>
+                                <p>2023. 02 ~ 2023. 09</p>
+                            </div>
+                            <ul class="main-task">
+                                <h3>Main Task</h3>
+                                <li>스마트폰 케이스 제작 발주 업무</li>
+                                <li>스마트폰 케이스 디자인 (UV, 전사 등)</li>
+                                <li>스마트폰 케이스 개별이미지 및 상세페이지 제작</li>
+                                <li>개별이미지 및 상세페이지 컨텐츠 용 스마트폰 및 케이스 3D 모델링</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sh-company career-list">
+                        <img src="./images/contents-image/sh-career.jpg" alt="#">
+                        <div class="career-contents">
+                            <h2 class="career-company">
+                                SH건설
+                            </h2>
+                            <div class="date">
+                                <h3>Interior Construction Management</h3>
+                                <p>2024. 01 ~ 2025. 05</p>
+                            </div>
+                            <ul class="main-task">
+                                <h3>Main Task</h3>
+                                <li>현장 관리</li>
+                                <li>현장 출력 인원 관리 및 안전 관리</li>
+                                <li>포스코 포항 및 광양 제철소 하도급 협력사 행정 업무 (방문 관리, 물품 반출입, 업무 수주 미팅 일정 조정 등) </li>
+                                <li>포스코 DX, 포스코 ENC 시공 계획서, 주간 회의 Presentation 슬라이드 제작 및 디자인</li>
+                                <li>일반 현장, 포스코 DX, ENC 미팅 및 제공용 3D 모델링 및 내부 인테리어 모델링</li>
+                                <li>기타 사장님 개인 외부 업무 보조 (메인비즈 프레젠테이션 디자인 및 제작 등)</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="license">
-                    <h2>License</h2>
-                    <ul class="License-list">
-                        <li>
-                            <p class="list1">2022.12</p>
-                            <span>컴퓨터그래픽스운용기능사 | 한국산업인력공단</span>
-                        </li>
-                        <li>
-                            <p class="list2">2021.09</p>
-                            <span>3D프린팅모델링자격증 1급 | 한국생산성본부</span>
-                        </li>
-                        <li>
-                            <p class="list3">2020.09</p>
-                            <span>GTQ 1급 | 한국생산성본부</span>
-                        </li>
-                    </ul>
+            </div>
+            <div class="swiper-slide con4" id="project">
+                <div class="swiper project-slide">
+                    <div class="swiper-wrapper project-wrapper">
+                        <div class="swiper-slide con1">
+                            <div class="project-left">
+                                <div class="project-title">
+                                    <h1>PRO-SPECS  |  <span>Always <em>RED</em></span></h1>
+                                    <p>프로스펙스 UX/UI 개선 및 리디자인 프로젝트 (Only hard coding)</p>
+                                </div>
+                                <div class="project-contents">
+                                    <div class="project-tool">
+                                        <h2>USE TOOL</h2>
+                                        <div class="icon">
+                                            <img src="./images/icon/Visual_Studio_Code.png" alt="#">
+                                            <img src="./images/icon/Figma.png" alt="#">
+                                        </div>
+                                    </div>
+                                    <div class="project-prototype">
+                                        <h2>ProtoType</h2>
+                                        <div class="proto-btn">
+                                            <a href="#"><span>Figma</span><img src="./images/component/arrow_next_14px.png" alt="#"></a>
+                                            <a href="#"><span>Github</span><img src="./images/component/arrow_next_14px.png" alt="#"></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-original">
+                                        <h2>Original</h2>
+                                        <div class="org-btn">
+                                            <a href="#">Figma<img src="./images/component/arrow_next_14px.png" alt="#"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="desktop" src="./images/mock-up/prospecs/desktop.png" alt="desktop">
+                            <img class="laptop" src="./images/mock-up/prospecs/laptop.png" alt="laptop">
+                        </div>
+                        <div class="swiper-slide con2">
+                            <div class="project-left">
+                                <div class="project-title">
+                                    <h1>PRO-SPECS  |  <span>Always <em>RED</em></span></h1>
+                                    <p>프로스펙스 UX/UI 개선 및 리디자인 프로젝트 (Only hard coding)</p>
+                                </div>
+                                <div class="project-contents">
+                                    <div class="project-tool">
+                                        <h2>USE TOOL</h2>
+                                        <div class="icon">
+                                            <img src="./images/icon/Visual_Studio_Code.png" alt="#">
+                                            <img src="./images/icon/Figma.png" alt="#">
+                                        </div>
+                                    </div>
+                                    <div class="project-prototype">
+                                        <h2>ProtoType</h2>
+                                        <div class="proto-btn">
+                                            <a href="#">Figma<img src="./images/component/arrow_next_14px.png" alt="#"></a>
+                                            <a href="#">Github<img src="./images/component/arrow_next_14px.png" alt="#"></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-original">
+                                        <h2>Original</h2>
+                                        <div class="org-btn">
+                                            <a href="#">Figma<img src="./images/component/arrow_next_14px.png" alt="#"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-right">
+                                <img src="#" alt="mockup-1">
+                                <img src="#" alt="mockup-2">
+                            </div>
+                        </div>
+                        <div class="swiper-slide con3">
+                            <div class="project-left">
+                                <div class="project-title">
+                                    <h1>PRO-SPECS  |  <span>Always <em>RED</em></span></h1>
+                                    <p>프로스펙스 UX/UI 개선 및 리디자인 프로젝트 (Only hard coding)</p>
+                                </div>
+                                <div class="project-contents">
+                                    <div class="project-tool">
+                                        <h2>USE TOOL</h2>
+                                        <div class="icon">
+                                            <img src="./images/icon/Visual_Studio_Code.png" alt="#">
+                                            <img src="./images/icon/Figma.png" alt="#">
+                                        </div>
+                                    </div>
+                                    <div class="project-prototype">
+                                        <h2>ProtoType</h2>
+                                        <div class="proto-btn">
+                                            <a href="#">Figma<img src="./images/component/arrow_next_14px.png" alt="#"></a>
+                                            <a href="#">Github<img src="./images/component/arrow_next_14px.png" alt="#"></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-original">
+                                        <h2>Original</h2>
+                                        <div class="org-btn">
+                                            <a href="#">Figma<img src="./images/component/arrow_next_14px.png" alt="#"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-right">
+                                <img src="#" alt="mockup-1">
+                                <img src="#" alt="mockup-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide con5" id="others">
+                <h1><em>OTHER </em>PROJECT</h1>
+                <div class="swiper" id="other-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide img1"><a href="#"><img src="./images/others/others1.png" alt="#"></a></div>
+                        <div class="swiper-slide img2"><a href="#"><img src="./images/others/others2.png" alt="#"></a></div>
+                        <div class="swiper-slide img4"><a href="#"><img src="./images/others/others3.png" alt="#"></a></div>
+                        <div class="swiper-slide img5"><a href="#"><img src="./images/others/others4.png" alt="#"></a></div>
+                        <div class="swiper-slide img6"><a href="#"><img src="./images/others/others5.png" alt="#"></a></div>
+                        <div class="swiper-slide img3"><a href="#"><img src="./images/others/others6.png" alt="#"></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide con6" id="code">
+                <h1>Thank you, and <em>let’s work with me</em></h1>
+                <div class="info">
+                    <p>E-mail : <em>tsuroki0210@gmail.com</em></p>
+                    <p>Phone : <em>010-6863-4316</em></p>
+                    <span class="hr"></span>
+                    <div class="qr-code">
+                        <a href="#"><img src="./images/icon/qr.png" alt="#"></a>
+                    </div>
+                    <h2>You can contact me whenever you want.</h2>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="swiper-pagination" style="display: flex; flex-flow: column nowrap; justify-content: center; align-items: flex-end;"> </div>
+    </div>
 </body>
 </html>
