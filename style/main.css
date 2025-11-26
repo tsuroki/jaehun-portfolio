@@ -4,6 +4,11 @@
   src: url("../font/Moderniz.otf") format("opentype");
   font-style: normal;
 }
+@font-face {
+  font-family: "Geoform";
+  src: url("../font/geoform/Geoform-Medium.otf") format("opentype");
+  font-style: normal;
+}
 /* font-weight */
 /* font-size */
 /* color */
@@ -406,7 +411,7 @@ html, body {
   height: 100%;
   position: relative;
 }
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 .container {
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 > .container {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -424,87 +429,87 @@ html, body {
   align-items: center;
   gap: 100px;
 }
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 .container .project-contents {
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 > .container .project-contents {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 60px;
 }
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 .container .project-contents .project-title > h1 {
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 > .container .project-contents .project-title > h1 {
   font-size: 2.25rem;
   margin-bottom: 10px;
 }
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 .container .project-contents .project-title > h1 > span {
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 > .container .project-contents .project-title > h1 > span {
   font-family: "moderniz";
 }
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 .container .project-contents .project-title > h1 > span > em {
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 > .container .project-contents .project-title > h1 > span > em {
   font-family: "moderniz";
   color: #FA0A00;
 }
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 .container .project-contents h2 {
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 > .container .project-contents h2 {
   font-weight: 600;
   margin-bottom: 10px;
 }
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 .container .project-contents .icon {
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 > .container .project-contents .icon {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
 }
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 .container .project-contents .icon > img {
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 > .container .project-contents .icon > img {
   width: 40px;
   height: 40px;
   border-radius: 5px;
 }
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 .container .project-contents .icon img:nth-child(1) {
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 > .container .project-contents .icon img:nth-child(1) {
   border: solid 1px rgba(0, 0, 0, 0.1);
 }
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 .container .project-contents .icon img:nth-child(3),
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 .container .project-contents .icon img:nth-child(4),
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 .container .project-contents .icon img:nth-child(5) {
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 > .container .project-contents .icon img:nth-child(3),
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 > .container .project-contents .icon img:nth-child(4),
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 > .container .project-contents .icon img:nth-child(5) {
   border: solid 1px rgba(0, 0, 0, 0.1);
 }
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 .container .project-contents .project-prototype .proto-btn {
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 > .container .project-contents .project-prototype .proto-btn {
   display: flex;
   flex-flow: row nowrap;
   gap: 10px;
 }
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 .container .project-contents .project-prototype .proto-btn a {
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 > .container .project-contents .project-prototype .proto-btn a {
   padding: 10px 20px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   background-color: #fff;
 }
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 .container .project-contents .project-prototype .proto-btn a span {
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 > .container .project-contents .project-prototype .proto-btn a span {
   font-size: 0.875rem;
   transform: translateY(-1px);
 }
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 .container .project-contents .project-prototype .proto-btn a img {
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 > .container .project-contents .project-prototype .proto-btn a img {
   width: 14px;
   height: 14px;
   transform: translateY(3px);
 }
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 .container .project-contents .project-original h2 {
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 > .container .project-contents .project-original h2 {
   margin-bottom: 10px;
 }
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 .container .project-contents .project-original .org-btn {
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 > .container .project-contents .project-original .org-btn {
   padding: 10px 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
 }
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 .container .project-contents .project-original .org-btn a {
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 > .container .project-contents .project-original .org-btn a {
   padding: 10px 20px;
   border-radius: 10px;
   background-color: #fff;
 }
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 .container .project-contents .project-original .org-btn a span {
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 > .container .project-contents .project-original .org-btn a span {
   font-size: 0.875rem;
   transform: translateY(-1px);
 }
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 .container .project-contents .project-original .org-btn a img {
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con1 > .container .project-contents .project-original .org-btn a img {
   width: 14px;
   height: 14px;
   transform: translateY(3px);
@@ -526,17 +531,35 @@ html, body {
   top: 50%;
   transform: translate(-50%, -50%);
   padding: 80px 80px;
-  background-image: url(../images/bg/prospecs-bg.png);
-  background-position: center;
+  background-color: #fff;
+  background-image: url(../images/project/canada_goose/classic.png);
+  background-position: 800px 400px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 50%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
   gap: 100px;
+  z-index: 1;
+}
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con2 .container::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 500;
+}
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con2 .container .desktop {
+  z-index: 999;
 }
 .swiper-handle .main-contents-list #project .project-slide .project-wrapper .con2 .container .project-contents {
+  z-index: 999;
+  position: relative;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
@@ -547,12 +570,17 @@ html, body {
   font-size: 2.25rem;
   margin-bottom: 10px;
 }
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con2 .container .project-contents .project-title > h1 > span {
-  font-family: "moderniz";
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con2 .container .project-contents .project-title > span {
+  font-size: 2.25rem;
+  font-family: "Geoform";
+  margin-bottom: 10px;
 }
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con2 .container .project-contents .project-title > h1 > span > em {
-  font-family: "moderniz";
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con2 .container .project-contents .project-title > span > em {
+  font-family: "Geoform";
   color: #FA0A00;
+}
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con2 .container .project-contents .project-title > p {
+  margin-top: 10px;
 }
 .swiper-handle .main-contents-list #project .project-slide .project-wrapper .con2 .container .project-contents h2 {
   font-weight: 600;
@@ -570,12 +598,12 @@ html, body {
   height: 40px;
   border-radius: 5px;
 }
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con2 .container .project-contents .icon img:nth-child(1) {
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con2 .container .project-contents .icon img:nth-child(2) {
   border: solid 1px rgba(0, 0, 0, 0.1);
 }
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con2 .container .project-contents .icon img:nth-child(3),
 .swiper-handle .main-contents-list #project .project-slide .project-wrapper .con2 .container .project-contents .icon img:nth-child(4),
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con2 .container .project-contents .icon img:nth-child(5) {
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con2 .container .project-contents .icon img:nth-child(5),
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con2 .container .project-contents .icon img:nth-child(6) {
   border: solid 1px rgba(0, 0, 0, 0.1);
 }
 .swiper-handle .main-contents-list #project .project-slide .project-wrapper .con2 .container .project-contents .project-prototype .proto-btn {
@@ -629,6 +657,7 @@ html, body {
 .swiper-handle .main-contents-list #project .project-slide .project-wrapper .con3 {
   position: relative;
   background-color: #e9e9e9;
+  z-index: 1;
 }
 .swiper-handle .main-contents-list #project .project-slide .project-wrapper .con3 .container {
   width: 1500px;
@@ -638,17 +667,35 @@ html, body {
   top: 50%;
   transform: translate(-50%, -50%);
   padding: 80px 80px;
-  background-image: url(../images/bg/prospecs-bg.png);
-  background-position: center;
+  background-color: #FFFFFF;
+  background-image: url(../images/project/hanjin/hanjin-icon.png);
+  background-position: 660px 200px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 60%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
   gap: 100px;
 }
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con3 .container::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 500;
+}
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con3 .container .desktop {
+  position: relative;
+  z-index: 999;
+}
 .swiper-handle .main-contents-list #project .project-slide .project-wrapper .con3 .container .project-contents {
+  position: relative;
+  z-index: 999;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
@@ -659,12 +706,17 @@ html, body {
   font-size: 2.25rem;
   margin-bottom: 10px;
 }
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con3 .container .project-contents .project-title > h1 > span {
-  font-family: "moderniz";
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con3 .container .project-contents .project-title > span {
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con3 .container .project-contents .project-title > h1 > span > em {
-  font-family: "moderniz";
-  color: #FA0A00;
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con3 .container .project-contents .project-title > span > em {
+  color: #2C8CE8;
+  font-weight: 600;
+}
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con3 .container .project-contents .project-title > p {
+  margin-top: 10px;
 }
 .swiper-handle .main-contents-list #project .project-slide .project-wrapper .con3 .container .project-contents h2 {
   font-weight: 600;
@@ -682,12 +734,12 @@ html, body {
   height: 40px;
   border-radius: 5px;
 }
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con3 .container .project-contents .icon img:nth-child(2) {
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con3 .container .project-contents .icon img:nth-child(1) {
   border: solid 1px rgba(0, 0, 0, 0.1);
 }
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con3 .container .project-contents .icon img:nth-child(3),
 .swiper-handle .main-contents-list #project .project-slide .project-wrapper .con3 .container .project-contents .icon img:nth-child(4),
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con3 .container .project-contents .icon img:nth-child(5),
-.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con3 .container .project-contents .icon img:nth-child(6) {
+.swiper-handle .main-contents-list #project .project-slide .project-wrapper .con3 .container .project-contents .icon img:nth-child(5) {
   border: solid 1px rgba(0, 0, 0, 0.1);
 }
 .swiper-handle .main-contents-list #project .project-slide .project-wrapper .con3 .container .project-contents .project-prototype .proto-btn {

@@ -382,7 +382,7 @@
                     width: 100%;
                     height: 100%;
                     position:relative;
-                        .container {
+                        > .container {
                             width: 100%;
                             height: 100%;
                             position: absolute;
@@ -507,16 +507,34 @@
                             top: 50%;
                             transform: translate(-50%, -50%);
                             padding: 80px 80px;
-                            background-image: url(../images/bg/prospecs-bg.png);
-                            background-position: center;
+                            background-color: #fff;
+                            background-image: url(../images/project/canada_goose/classic.png);
+                            background-position: 800px 400px;
                             background-repeat: no-repeat;
-                            background-size: cover;
+                            background-size: 50%;
                             display: flex;
                             flex-flow: row nowrap;
                             justify-content: flex-start;
                             align-items: center;
                             gap: 100px;
+                            z-index: 1;
+                            &::after{
+                                content: '';
+                                width: 100%;
+                                height: 100%;
+                                display: block;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                background-color: rgba(255, 255, 255, 0.9);
+                                z-index: 500;
+                            }
+                            .desktop {
+                                z-index: 999;
+                            }
                             .project-contents {
+                                z-index: 999;
+                                position: relative;
                                 display: flex;
                                 flex-flow: column nowrap;
                                 justify-content: flex-start;
@@ -526,14 +544,19 @@
                                     > h1 {
                                         font-size: $size-36px;
                                         margin-bottom: 10px;
-                                        > span {
-                                            font-family: 'moderniz';
-                                            > em {
-                                                font-family: 'moderniz';
-                                                color: #FA0A00;
-                                            }
+                                    }
+                                    > span {
+                                        font-size: $size-36px;
+                                        font-family: 'Geoform';
+                                        margin-bottom: 10px;
+                                        > em {
+                                            font-family: 'Geoform';
+                                            color: #FA0A00;
                                         }
                                     }
+                                    > p {
+                                        margin-top: 10px;
+                                    }  
                                 }
                                 h2 {
                                     font-weight: $weight-semibold;
@@ -549,12 +572,12 @@
                                         width: 40px; height: 40px;
                                         border-radius: 5px;
                                     }
-                                    img:nth-child(1){
+                                    img:nth-child(2){
                                         border: solid 1px rgba(0, 0, 0, 0.1);
                                     }
-                                    img:nth-child(3),
                                     img:nth-child(4),
-                                    img:nth-child(5){
+                                    img:nth-child(5),
+                                    img:nth-child(6){
                                         border: solid 1px rgba(0, 0, 0, 0.1);
                                     }
                                 }
@@ -616,6 +639,7 @@
                     .con3 {
                         position:relative;
                         background-color: #e9e9e9;
+                        z-index: 1;
                         .container {
                             width: 1500px;
                             height: 800px;
@@ -624,16 +648,34 @@
                             top: 50%;
                             transform: translate(-50%, -50%);
                             padding: 80px 80px;
-                            background-image: url(../images/bg/prospecs-bg.png);
-                            background-position: center;
+                            background-color: #FFFFFF;
+                            background-image: url(../images/project/hanjin/hanjin-icon.png);
+                            background-position: 660px 200px;
                             background-repeat: no-repeat;
-                            background-size: cover;
+                            background-size: 60%;
                             display: flex;
                             flex-flow: row nowrap;
                             justify-content: flex-start;
                             align-items: center;
                             gap: 100px;
+                            &::after{
+                                content: '';
+                                width: 100%;
+                                height: 100%;
+                                display: block;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                background-color: rgba(255, 255, 255, 0.9);
+                                z-index: 500;
+                            }
+                            .desktop {
+                                position: relative;
+                                z-index: 999;
+                            }
                             .project-contents {
+                                position: relative;
+                                z-index: 999;
                                 display: flex;
                                 flex-flow: column nowrap;
                                 justify-content: flex-start;
@@ -643,14 +685,19 @@
                                     > h1 {
                                         font-size: $size-36px;
                                         margin-bottom: 10px;
-                                        > span {
-                                            font-family: 'moderniz';
-                                            > em {
-                                                font-family: 'moderniz';
-                                                color: #FA0A00;
-                                            }
+                                    }
+                                    > span {
+                                        font-size: $size-36px;
+                                        font-weight: $weight-semibold;
+                                        margin-bottom: 10px;
+                                        > em {
+                                            color: $color-blue;
+                                            font-weight: $weight-semibold;
                                         }
                                     }
+                                    > p {
+                                        margin-top: 10px;
+                                    }  
                                 }
                                 h2 {
                                     font-weight: $weight-semibold;
@@ -666,12 +713,12 @@
                                         width: 40px; height: 40px;
                                         border-radius: 5px;
                                     }
-                                    img:nth-child(2){
+                                    img:nth-child(1){
                                         border: solid 1px rgba(0, 0, 0, 0.1);
                                     }
+                                    img:nth-child(3),
                                     img:nth-child(4),
-                                    img:nth-child(5),
-                                    img:nth-child(6){
+                                    img:nth-child(5){
                                         border: solid 1px rgba(0, 0, 0, 0.1);
                                     }
                                 }

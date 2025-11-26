@@ -3,6 +3,11 @@
     src:url('../font/Moderniz.otf') format('opentype');
     font-style:normal;
 }
+@font-face {
+    font-family: 'Geoform';
+    src:url('../font/geoform/Geoform-Medium.otf') format('opentype');
+    font-style:normal;
+}
 /* font-weight */
 $weight-regular : 400;
 $weight-medium : 500;
@@ -35,6 +40,7 @@ $size-140px : 8.75rem;
 /* color */
 $color-purple : #D17EFF;
 $color-black : #222222;
+$color-blue : #2C8CE8;
 
 /* img size */
 @mixin profile-img{
