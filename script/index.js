@@ -65,3 +65,6 @@ const projectSlide = new Swiper(".project-slide", {
     nested: true,
     draggable: false,
 });
+
+const otherpic = document.querySelectorAll('#other-slide > .swiper-wrapper > .swiper-slide > a')
+console.log(otherpic)

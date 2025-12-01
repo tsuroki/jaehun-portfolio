@@ -832,6 +832,17 @@
                                 @include other-img;
                             }
                         }
+                        .after-pic {
+                            display: none;
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            background: rgba(0, 0, 0, 0.4);
+                            > img {
+                                width: 40%;
+                                height: auto;
+                            }
+                        }
                     }
                 }
             }
