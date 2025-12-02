@@ -786,14 +786,34 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            /* width: 100vw;
-            height: 100vh !important; */
             position: relative;
             overflow: hidden;
+            gap : 50px;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            .after-pic {
+                display: none;
+                position: absolute;
+                width: 100vw;
+                height: 100vh;
+                background: rgba(0, 0, 0, 0.2);
+                left : 0;
+                top : 0;
+                > img {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 30%;
+                    border: 3px solid #fff;
+                    object-fit: cover;
+                }
+            }
             > h1 {
                 font-size: $size-36px;
                 text-align: center;
-                transform: translateY(222px);
                 > em {
                     font-weight: $weight-semibold;
                     color : $color-purple;
@@ -802,11 +822,8 @@
             #other-slide{
                     width: 500px;
                     height: 500px;
-                    position: absolute;
-                    left: 50%;
-                    bottom: 130px;
-                    transform: translateX(-50%);
                     z-index: 1;
+                    position: relative;
                     overflow: visible;
                     &::after{
                         position: absolute;
@@ -825,22 +842,14 @@
                     flex-flow: row nowrap;
                     justify-content: flex-start;
                     align-items: center;
+                    position: static;
                     >.swiper-slide{
                         @include other-img;
+                        position: static;
                         > a {
                             > img {
                                 @include other-img;
-                            }
-                        }
-                        .after-pic {
-                            display: none;
-                            position: absolute;
-                            width: 100%;
-                            height: 100%;
-                            background: rgba(0, 0, 0, 0.4);
-                            > img {
-                                width: 40%;
-                                height: auto;
+                                object-fit: cover;
                             }
                         }
                     }

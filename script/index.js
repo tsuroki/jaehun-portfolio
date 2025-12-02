@@ -3,9 +3,7 @@ const mainSlide = new Swiper ('#portfolio',{
     loop : false,
     mousewheel: true,
     direction:'vertical',
-    releaseOnEdges: true,
     speed : 1000,
-    draggable: false,
     pagination:{
         el: '.port-nav',
         clickable : true,
@@ -67,4 +65,21 @@ const projectSlide = new Swiper(".project-slide", {
 });
 
 const otherpic = document.querySelectorAll('#other-slide > .swiper-wrapper > .swiper-slide > a')
+const afterPic = document.querySelector('.after-pic')
 console.log(otherpic)
+console.log(afterPic)
+
+for(let i of otherpic){
+    console.log(i)
+    i.addEventListener('click',() => {
+        afterPic.children[0].src = i.children[0].src
+        afterPic.style.display = "block";
+        afterPic.style.zIndex = 999;
+        mainSlide.mousewheel.disable();
+        afterPic.addEventListener('click', () => {
+            afterPic.style.display = "none"
+            afterPic.style.zIndex = 1
+            mainSlide.mousewheel.enable();
+        })
+    })
+}
