@@ -73,12 +73,16 @@ for(let i of otherpic){
     console.log(i)
     i.addEventListener('click',() => {
         afterPic.children[0].src = i.children[0].src
-        afterPic.style.display = "block";
         afterPic.style.zIndex = 999;
+        afterPic.style.opacity = 1
+        afterPic.style.transition = "opacity 0.3s";
+        afterPic.style.display = "block";
         mainSlide.mousewheel.disable();
         afterPic.addEventListener('click', () => {
-            afterPic.style.display = "none"
             afterPic.style.zIndex = 1
+            afterPic.style.opacity = 0
+            afterPic.style.transition = "display 0.3s"
+            afterPic.style.display = "none"
             mainSlide.mousewheel.enable();
         })
     })
