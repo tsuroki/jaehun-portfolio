@@ -65,23 +65,20 @@ const projectSlide = new Swiper(".project-slide", {
 });
 
 const otherpic = document.querySelectorAll('#other-slide > .swiper-wrapper > .swiper-slide > a')
-const afterPic = document.querySelector('.after-pic')
+const afterPic = document.querySelector('.pop-pic')
 console.log(otherpic)
 console.log(afterPic)
 
 for(let i of otherpic){
     console.log(i)
     i.addEventListener('click',() => {
-        afterPic.children[0].src = i.children[0].src
+        afterPic.children[0].children[0].src = i.children[0].src
         afterPic.style.zIndex = 999;
-        afterPic.style.opacity = 1
-        afterPic.style.transition = "opacity 0.3s";
-        afterPic.style.display = "block";
+        afterPic.style.display = "flex";
         mainSlide.mousewheel.disable();
+        afterPic.children[0].scrollTo(0, 0)
         afterPic.addEventListener('click', () => {
             afterPic.style.zIndex = 1
-            afterPic.style.opacity = 0
-            afterPic.style.transition = "display 0.3s"
             afterPic.style.display = "none"
             mainSlide.mousewheel.enable();
         })

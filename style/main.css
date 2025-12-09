@@ -43,6 +43,27 @@ html, body {
     transform: translateY(5px);
   }
 }
+.pop-pic {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  left: 0;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+}
+.pop-pic .pop-pic-con {
+  width: 600px;
+  height: 90vh;
+  overflow-y: scroll;
+}
+.pop-pic .pop-pic-con > img {
+  width: 100%;
+  border: 3px solid #fff;
+}
+
 .swiper-handle {
   width: 1920px;
   height: 100vh;
@@ -803,24 +824,6 @@ html, body {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-}
-.swiper-handle .main-contents-list #others .after-pic {
-  display: none;
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.2);
-  left: 0;
-  top: 0;
-}
-.swiper-handle .main-contents-list #others .after-pic > img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 30%;
-  border: 3px solid #fff;
-  object-fit: cover;
 }
 .swiper-handle .main-contents-list #others > h1 {
   font-size: 2.25rem;
